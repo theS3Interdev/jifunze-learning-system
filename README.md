@@ -1,48 +1,102 @@
-# [XXXXX XXXXX XXXXX] Project
-
-Welcome to the private repository for [XXXXX XXXXX XXXXX] project. This repository houses
-the codebase for the dynamic and interactive website, showcasing our commitment to
-excellence in web development.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+# Jifunze Learning Management System
 
 ## Introduction
 
-[XXXXX XXXXX XXXXX] is dedicated to transforming digital experiences. This website serves
-as a testament to our skills and commitment to delivering top-notch web solutions.
-
-## Features
-
-- **Dynamic Content:** Engage visitors with dynamic and personalized content.
-- **Interactive UI/UX:** Provide an immersive user experience with smooth navigation.
-- **Portfolio Showcase:** Highlight our successful projects and case studies.
-- **Contact Form:** Enable clients to reach out easily for inquiries and collaborations.
+This is the repository for the Jifunze Learning Management System.
 
 ## Tech Stack
 
-- **Frontend:** Next.js version 14, TypeScript, Tailwind CSS and Shadcn UI
-- **Backend:** GraphQL content management system hosted by Hygraph
-- **Deployment:** Vercel
+1. Next.js 14
+1. React
+1. Typescript
+1. Shadcn UI
+1. Tailwind
+1. Mux
+1. Uploadthing
+1. Prisma
+1. MongoDB
+1. PayPal
 
-## Getting Started
+## Key Features
 
-1. Clone the repository.
-2. Install dependencies using `pnpm install`.
-3. Run the development server with `pnpm dev`.
+- Browse & filter courses
+- Purchase courses using PayPal
+- Mark chapters as completed or uncomple
+- Progress calculation of each course
+- Student dashboard
+- Instructor mode
+- Create new courses
+- Create new chapters
+- Easily reorder chapter position with drag and drop
+- Upload thumbnails, attachments and videos using UploadThing
+- Video processing using Mux
+- HLS video player using Mux
+- Rich text editor for chapter description
+- Authentication using Clerk
+- ORM using Prisma
+- MongoDB database using MongoDB Atlas
 
-## Contributing
+## Prerequisites
 
-We will eventually welcome contributions!.
+**Node version 20.x.x**
 
-## License
+## Cloning The Repository
 
-This project is licensed under the MIT License.
+```shell
+git clone https://github.com/theS3Interdev/jifunze-lms-platform.git
+```
 
-Thank you for being a part of the [XXXXX XXXXX XXXXX] website project! 🚀✨
+## Install Packages
+
+```shell
+pnpm install
+```
+
+## Setup .env File
+
+```js
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+
+CLOUDINARY_API_SECRET=
+NEXT_PUBLIC_CLOUDINARY_API_KEY=
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+
+DATABASE_URL=
+
+PAYPAL_APP_SECRET=
+NEXT_PUBLIC_PAYPAL_CLIENT_ID=
+
+UPLOADTHING_APP_ID=
+UPLOADTHING_SECRET=
+
+NEXT_PUBLIC_APP_URL=
+NEXT_PUBLIC_INSTRUCTOR_ID=
+```
+
+## Setup Prisma
+
+Add PostgreSQL Database
+
+```shell
+pnpm dlx prisma generate
+pnpm dlx prisma db push
+```
+
+## Start The Application
+
+```shell
+pnpm dev
+```
+
+## Available Commands
+
+Running commands with npm `pnpm [command]`
+
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |
