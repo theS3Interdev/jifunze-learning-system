@@ -9,6 +9,10 @@ export async function POST(req: Request, { params }: { params: { courseId: strin
 
 		const uploadResult = await req.json();
 
+		const fileName = uploadResult.url.name;
+
+		const fileUrl = uploadResult.url.fileUrl;
+
 		if (!userId) {
 			return new NextResponse("Unauthorized access.", { status: 401 });
 		}
@@ -26,8 +30,8 @@ export async function POST(req: Request, { params }: { params: { courseId: strin
 
 		const attachment = await db.attachment.create({
 			data: {
-				url: uploadResult.url.fileUrl,
-				name: uploadResult.url.name,
+				url: fileUrl,
+				name: fileName,
 				courseId: params.courseId,
 			},
 		});
