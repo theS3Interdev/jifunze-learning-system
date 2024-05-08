@@ -80,7 +80,7 @@ NEXT_PUBLIC_INSTRUCTOR_ID=
 
 ## Setup Prisma
 
-Add PostgreSQL Database
+Add MongoDB Database
 
 ```shell
 pnpm dlx prisma generate
