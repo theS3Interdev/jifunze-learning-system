@@ -2,13 +2,14 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-//import { CldImage, CldUploadWidget } from "next-cloudinary";
+import Image from "next/image";
 import axios from "axios";
 import * as z from "zod";
 import { Pencil, PlusCircle, ImageIcon } from "lucide-react";
 
 import { Course } from "@prisma/client";
 
+import { FileUpload } from "@/components/file-upload";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -86,36 +87,25 @@ export const CourseImageForm = ({ initialData, courseId }: CourseImageFormProps)
 					</div>
 				) : (
 					<div className="relative mt-2 aspect-video">
-						<CldImage
-							src={initialData.imageUrl}
+						<Image
 							alt="Upload"
 							fill
-							sizes="100vw"
 							className="rounded-md object-cover"
+							src={initialData.imageUrl}
 						/>
 					</div>
 				))}
 
 			{isEditing && (
 				<div>
-					<CldUploadWidget
-						uploadPreset="jifunzeImages"
-						signatureEndpoint="/api/cloudinary"
-						options={{ sources: ["local"], maxFiles: 1 }}
-						onSuccess={(result: any) => {
-							if (result) {
-								onSubmit({ imageUrl: result.info.secure_url });
+					<FileUpload
+						endpoint="courseImage"
+						onChange={(url) => {
+							if (url) {
+								onSubmit({ imageUrl: url });
 							}
 						}}
-					>
-						{({ open }) => {
-							return (
-								<Button onClick={() => open()} className="bg-blue-600">
-									Upload Image
-								</Button>
-							);
-						}}
-					</CldUploadWidget>
+					/>
 
 					<div className="mt-4 text-xs text-muted-foreground">
 						16:9 aspect ratio is recommended.
