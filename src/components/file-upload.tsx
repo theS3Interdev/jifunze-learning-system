@@ -6,7 +6,7 @@ import { ourFileRouter } from "@/api/uploadthing/core";
 import { useToast } from "@/components/ui/use-toast";
 
 type FileUploadProps = {
-	onChange: (url?: string) => void;
+	onChange: (url?: string, name?: string) => void;
 	endpoint: keyof typeof ourFileRouter;
 };
 
