@@ -8,7 +8,7 @@ import { PlusCircle, File, Loader2, X } from "lucide-react";
 
 import { Attachment, Course } from "@prisma/client";
 
-//import { FileUpload } from "@/components/file-upload";
+import { FileUpload } from "@/components/file-upload";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 

@@ -5,19 +5,19 @@ import { ourFileRouter } from "@/api/uploadthing/core";
 
 import { useToast } from "@/components/ui/use-toast";
 
-type FileUploadProps = {
+type ImageUploadProps = {
 	onChange: (url?: string) => void;
 	endpoint: keyof typeof ourFileRouter;
 };
 
-export const FileUpload = ({ onChange, endpoint }: FileUploadProps) => {
+export const ImageUpload = ({ onChange, endpoint }: ImageUploadProps) => {
 	const { toast } = useToast();
 
 	return (
 		<UploadDropzone
 			endpoint={endpoint}
 			onClientUploadComplete={(res: any) => {
-				onChange(res?.[0]);
+				onChange(res?.[0].url);
 			}}
 			onUploadError={(error: Error) => {
 				toast({

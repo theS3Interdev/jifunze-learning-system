@@ -119,16 +119,6 @@ const CoursePage = async ({ params }: { params: { courseId: string } }) => {
 					<div className="space-y-6">
 						<div>
 							<div className="flex items-center gap-x-2">
-								<IconBadge icon={CircleDollarSign} />
-
-								<h2 className="text-xl">Price your course</h2>
-							</div>
-
-							<CoursePriceForm initialData={course} courseId={course.id} />
-						</div>
-
-						<div>
-							<div className="flex items-center gap-x-2">
 								<IconBadge icon={ListChecks} />
 
 								<h2 className="text-xl">Your course chapters</h2>
@@ -145,6 +135,16 @@ const CoursePage = async ({ params }: { params: { courseId: string } }) => {
 							</div>
 
 							<CourseAttachmentForm initialData={course} courseId={course.id} />
+						</div>
+
+						<div>
+							<div className="flex items-center gap-x-2">
+								<IconBadge icon={CircleDollarSign} />
+
+								<h2 className="text-xl">Price your course</h2>
+							</div>
+
+							<CoursePriceForm initialData={course} courseId={course.id} />
 						</div>
 					</div>
 				</div>

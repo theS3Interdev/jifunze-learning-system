@@ -9,7 +9,7 @@ import { Pencil, PlusCircle, ImageIcon } from "lucide-react";
 
 import { Course } from "@prisma/client";
 
-import { FileUpload } from "@/components/file-upload";
+import { ImageUpload } from "@/components/image-upload";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -98,7 +98,7 @@ export const CourseImageForm = ({ initialData, courseId }: CourseImageFormProps)
 
 			{isEditing && (
 				<div>
-					<FileUpload
+					<ImageUpload
 						endpoint="courseImage"
 						onChange={(url) => {
 							if (url) {
