@@ -1,7 +1,6 @@
+import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
-
-import type { Metadata } from "next";
 
 import { cn } from "@/lib/utils";
 import { ConfettiProvider } from "@/lib/providers/confetti-provider";
@@ -20,7 +19,11 @@ export const metadata: Metadata = {
 
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
 	return (
-		<ClerkProvider>
+		<ClerkProvider
+			appearance={{
+				variables: { colorPrimary: "#0369a1" },
+			}}
+		>
 			<html lang="en">
 				<body className={cn("font-sans antialiased", fontSans.variable)}>
 					{children}
