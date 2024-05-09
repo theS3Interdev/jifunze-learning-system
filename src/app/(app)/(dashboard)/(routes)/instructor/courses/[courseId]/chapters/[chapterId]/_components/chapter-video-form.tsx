@@ -42,7 +42,7 @@ export const ChapterVideoForm = ({
 
 			toast({
 				title: "Chapter updated",
-				description: "The chapter video has been updated successfully.",
+				description: "The chapter video has been successfully updated.",
 				duration: 5000,
 				className: "success-toast",
 			});

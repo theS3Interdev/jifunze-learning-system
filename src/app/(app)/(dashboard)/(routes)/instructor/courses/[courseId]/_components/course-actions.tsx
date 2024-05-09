@@ -48,7 +48,7 @@ export const CourseActions = ({
 
 				toast({
 					title: "Course published",
-					description: "The course has been published sucessfully.",
+					description: "The course has been sucessfully published.",
 					duration: 5000,
 					className: "success-toast",
 				});
