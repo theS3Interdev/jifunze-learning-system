@@ -8,12 +8,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Pencil } from "lucide-react";
 
-import { Chapter } from "@prisma/client";
-import { cn } from "@/lib/utils";
-
-import { Editor } from "@/components/editor";
-import { Preview } from "@/components/preview";
-
 import { Button } from "@/components/ui/button";
 import {
 	Form,
@@ -22,30 +16,33 @@ import {
 	FormItem,
 	FormMessage,
 } from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 
-type ChapterDescriptionFormProps = {
-	initialData: Chapter;
+type ChapterTitleFormProps = {
+	initialData: {
+		title: string;
+	};
 	courseId: string;
 	chapterId: string;
 };
 
 const formSchema = z.object({
-	description: z
+	title: z
 		.string()
 		.min(2, {
-			message: "What is the chapter description?",
+			message: "What is the chapter title?",
 		})
 		.max(250, {
-			message: "The chapter description should not be more than 250 characters.",
+			message: "The chapter title should not be more than 250 characters.",
 		}),
 });
 
-export const ChapterDescriptionForm = ({
+export const ChapterTitleForm = ({
 	initialData,
 	courseId,
 	chapterId,
-}: ChapterDescriptionFormProps) => {
+}: ChapterTitleFormProps) => {
 	const [isEditing, setIsEditing] = useState(false);
 
 	const router = useRouter();
@@ -56,9 +53,7 @@ export const ChapterDescriptionForm = ({
 
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
-		defaultValues: {
-			description: initialData?.description || "",
-		},
+		defaultValues: initialData,
 	});
 
 	const { isSubmitting, isValid } = form.formState;
@@ -68,8 +63,8 @@ export const ChapterDescriptionForm = ({
 			await axios.patch(`/api/courses/${courseId}/chapters/${chapterId}`, values);
 
 			toast({
-				title: "Chapter updated",
-				description: "The chapter description has been successfully updated.",
+				title: "Chapter title updated",
+				description: "The chapter title has been successfully updated.",
 				duration: 5000,
 				className: "success-toast",
 			});
@@ -90,42 +85,35 @@ export const ChapterDescriptionForm = ({
 	return (
 		<div className="mt-6 rounded-md border bg-slate-100 p-4">
 			<div className="flex items-center justify-between font-medium">
-				Chapter description
+				Chapter title
 				<Button onClick={toggleEdit} variant="ghost">
 					{isEditing ? (
 						<>Cancel</>
 					) : (
 						<>
 							<Pencil className="mr-2 h-4 w-4" />
-							Edit description
+							Edit title
 						</>
 					)}
 				</Button>
 			</div>
 
-			{!isEditing && (
-				<div
-					className={cn(
-						"mt-2 text-sm",
-						!initialData.description && "italic text-slate-500",
-					)}
-				>
-					{!initialData.description && "No description"}
-
-					{initialData.description && <Preview value={initialData.description} />}
-				</div>
-			)}
+			{!isEditing && <p className="mt-2 text-sm">{initialData.title}</p>}
 
 			{isEditing && (
 				<Form {...form}>
 					<form onSubmit={form.handleSubmit(onSubmit)} className="mt-4 space-y-4">
 						<FormField
 							control={form.control}
-							name="description"
+							name="title"
 							render={({ field }) => (
 								<FormItem>
 									<FormControl>
-										<Editor {...field} />
+										<Input
+											disabled={isSubmitting}
+											placeholder="e.g. 'Introduction to the course'"
+											{...field}
+										/>
 									</FormControl>
 									<FormMessage />
 								</FormItem>

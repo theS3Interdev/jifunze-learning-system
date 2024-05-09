@@ -5,12 +5,12 @@ import { ourFileRouter } from "@/api/uploadthing/core";
 
 import { useToast } from "@/components/ui/use-toast";
 
-type ImageUploadProps = {
+type ImageVideoUploadProps = {
 	onChange: (url?: string) => void;
 	endpoint: keyof typeof ourFileRouter;
 };
 
-export const ImageUpload = ({ onChange, endpoint }: ImageUploadProps) => {
+export const ImageVideoUpload = ({ onChange, endpoint }: ImageVideoUploadProps) => {
 	const { toast } = useToast();
 
 	return (
