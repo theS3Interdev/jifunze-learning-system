@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { UserButton, useAuth } from "@clerk/nextjs";
-import { LogOut } from "lucide-react";
+import { LogIn, LogOut } from "lucide-react";
 
 import { isInstructor } from "@/lib/isInstructor";
 
@@ -40,7 +40,8 @@ export const NavigationBarRoutes = () => {
 				) : isInstructor(userId) ? (
 					<Link href="/instructor/courses">
 						<Button size="sm" variant="ghost">
-							Instructor mode
+							<LogIn className="mr-2 h-4 w-4" />
+							Enter Instructor mode
 						</Button>
 					</Link>
 				) : null}

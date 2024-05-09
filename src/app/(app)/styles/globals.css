@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -93,5 +95,8 @@ body,
 }
 
 .ql-container {
-	font-size: 16px !important;
+	font-family: "Inter", sans-serif !important;
+	font-size: 14px !important;
 }
+
+@import "~@uploadthing/react/styles.css";
