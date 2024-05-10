@@ -16,15 +16,14 @@ const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
 	title: "Jifunze Learning System",
-	description:
-		"Jifunze: Expand your knowledge without breaking the bank.  Affordable, high-quality online courses on the skills you need.",
+	description: "Jifunze: Expand your knowledge without breaking the bank.  Affordable, high-quality online courses on the skills you need.",
 };
 
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
 	return (
 		<ClerkProvider
 			appearance={{
-				variables: { colorPrimary: "#0369a1" },
+				variables: { colorPrimary: "#3576DF" },
 			}}
 		>
 			<html lang="en">
