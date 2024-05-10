@@ -8,7 +8,7 @@ import { PlusCircle, File, Loader2, X } from "lucide-react";
 
 import { Attachment, Course } from "@prisma/client";
 
-import { FileUpload } from "@/components/file-upload";
+import { UniversalUpload } from "@/components/universal-upload";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -19,6 +19,7 @@ type CourseAttachmentFormProps = {
 
 const formSchema = z.object({
 	url: z.string().min(1),
+	name: z.string().optional(),
 });
 
 export const CourseAttachmentForm = ({
@@ -141,11 +142,11 @@ export const CourseAttachmentForm = ({
 
 			{isEditing && (
 				<div>
-					<FileUpload
+					<UniversalUpload
 						endpoint="courseAttachment"
-						onChange={(url) => {
+						onChange={(url, name) => {
 							if (url) {
-								onSubmit({ url: url });
+								onSubmit({ url: url, name: name });
 							}
 						}}
 					/>
