@@ -9,10 +9,7 @@ const { video } = new Mux({
 	tokenSecret: process.env.MUX_TOKEN_SECRET_KEY!,
 });
 
-export async function PATCH(
-	req: Request,
-	{ params }: { params: { courseId: string; chapterId: string } },
-) {
+export async function PATCH(req: Request, { params }: { params: { courseId: string; chapterId: string } }) {
 	try {
 		const { userId } = auth();
 
@@ -71,6 +68,8 @@ export async function PATCH(
 			const asset = await video.assets.create({
 				input: [{ url: values.videoUrl }],
 				playback_policy: ["public"],
+				max_resolution_tier: "1080p",
+				encoding_tier: "baseline",
 			});
 
 			await db.muxData.create({
@@ -89,10 +88,7 @@ export async function PATCH(
 	}
 }
 
-export async function DELETE(
-	req: Request,
-	{ params }: { params: { courseId: string; chapterId: string } },
-) {
+export async function DELETE(req: Request, { params }: { params: { courseId: string; chapterId: string } }) {
 	try {
 		const { userId } = auth();
 
