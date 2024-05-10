@@ -17,11 +17,7 @@ type CourseActionsProps = {
 	isPublished: boolean;
 };
 
-export const CourseActions = ({
-	disabled,
-	courseId,
-	isPublished,
-}: CourseActionsProps) => {
+export const CourseActions = ({ disabled, courseId, isPublished }: CourseActionsProps) => {
 	const [isLoading, setIsLoading] = useState(false);
 
 	const router = useRouter();
@@ -99,12 +95,7 @@ export const CourseActions = ({
 
 	return (
 		<div className="flex items-center gap-x-2">
-			<Button
-				onClick={onClick}
-				disabled={disabled || isLoading}
-				variant="outline"
-				size="sm"
-			>
+			<Button onClick={onClick} disabled={disabled || isLoading} variant="outline" size="sm">
 				{isPublished ? "Unpublish" : "Publish"}
 			</Button>
 
