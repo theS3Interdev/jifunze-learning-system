@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
+import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
+import { extractRouterConfig } from "uploadthing/server";
 
+import { ourFileRouter } from "@/api/uploadthing/core";
 import { cn } from "@/lib/utils";
 import { ConfettiProvider } from "@/lib/providers/confetti-provider";
 
@@ -26,6 +29,7 @@ const RootLayout = async ({ children }: { children: React.ReactNode }) => {
 		>
 			<html lang="en">
 				<body className={cn("font-sans antialiased", fontSans.variable)}>
+					<NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
 					{children}
 					<Toaster />
 					<ConfettiProvider />

@@ -113,7 +113,7 @@ const ChapterPage = async ({
 							<div className="flex items-center gap-x-2">
 								<IconBadge icon={Eye} />
 
-								<h2 className="text-xl">Access settings</h2>
+								<h2 className="text-xl">Chapter access settings</h2>
 							</div>
 
 							<ChapterAccessForm
@@ -128,7 +128,7 @@ const ChapterPage = async ({
 						<div className="flex items-center gap-x-2">
 							<IconBadge icon={Video} />
 
-							<h2 className="text-xl">Add a video</h2>
+							<h2 className="text-xl">Chapter video</h2>
 						</div>
 
 						<ChapterVideoForm

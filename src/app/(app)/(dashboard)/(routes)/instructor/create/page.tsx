@@ -48,7 +48,7 @@ const CreateCoursePage = () => {
 
 			toast({
 				title: "Course created",
-				description: "The course was created successfully.",
+				description: "The course was successfully created.",
 				duration: 5000,
 				className: "success-toast",
 			});
