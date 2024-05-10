@@ -11,7 +11,7 @@ import { Chapter, MuxData } from "@prisma/client";
 
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
-import { ImageVideoUpload } from "@/components/image-video-upload";
+import { UniversalUpload } from "@/components/universal-upload";
 
 type ChapterVideoFormProps = {
 	initialData: Chapter & { muxData?: MuxData | null };
@@ -96,7 +96,7 @@ export const ChapterVideoForm = ({
 
 			{isEditing && (
 				<div>
-					<ImageVideoUpload
+					<UniversalUpload
 						endpoint="chapterVideo"
 						onChange={(url) => {
 							if (url) {
