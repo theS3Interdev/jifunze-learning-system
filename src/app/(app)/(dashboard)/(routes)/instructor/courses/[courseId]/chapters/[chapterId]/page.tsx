@@ -14,11 +14,7 @@ import { ChapterDescriptionForm } from "./_components/chapter-description-form";
 import { ChapterTitleForm } from "./_components/chapter-title-form";
 import { ChapterVideoForm } from "./_components/chapter-video-form";
 
-const ChapterPage = async ({
-	params,
-}: {
-	params: { courseId: string; chapterId: string };
-}) => {
+const ChapterPage = async ({ params }: { params: { courseId: string; chapterId: string } }) => {
 	const { userId } = auth();
 
 	if (!userId) {
@@ -52,18 +48,12 @@ const ChapterPage = async ({
 	return (
 		<>
 			{!chapter.isPublished && (
-				<Banner
-					variant="warning"
-					label="This chapter has not been unpublished. It will not be available for inclusion to the course."
-				/>
+				<Banner variant="warning" label="This chapter has not been unpublished. It will not be available for inclusion to the course." />
 			)}
 			<div className="p-6">
 				<div className="flex items-center justify-between">
 					<div className="w-full">
-						<Link
-							href={`/instructor/courses/${params.courseId}`}
-							className="mb-6 flex items-center text-sm transition hover:opacity-75"
-						>
+						<Link href={`/instructor/courses/${params.courseId}`} className="mb-6 flex items-center text-sm transition hover:opacity-75">
 							<ArrowLeft className="mr-2 h-4 w-4" />
 							Back to course setup
 						</Link>
@@ -72,9 +62,7 @@ const ChapterPage = async ({
 							<div className="flex flex-col gap-y-2">
 								<h1 className="text-2xl font-medium">Chapter Creation</h1>
 
-								<span className="text-sm text-slate-700">
-									Complete all fields {completionText}
-								</span>
+								<span className="text-sm text-slate-700">Complete all fields {completionText}</span>
 							</div>
 
 							<ChapterActions
@@ -96,17 +84,9 @@ const ChapterPage = async ({
 								<h2 className="text-xl">Customize your chapter</h2>
 							</div>
 
-							<ChapterTitleForm
-								initialData={chapter}
-								courseId={params.courseId}
-								chapterId={params.chapterId}
-							/>
+							<ChapterTitleForm initialData={chapter} courseId={params.courseId} chapterId={params.chapterId} />
 
-							<ChapterDescriptionForm
-								initialData={chapter}
-								courseId={params.courseId}
-								chapterId={params.chapterId}
-							/>
+							<ChapterDescriptionForm initialData={chapter} courseId={params.courseId} chapterId={params.chapterId} />
 						</div>
 
 						<div>
@@ -116,11 +96,7 @@ const ChapterPage = async ({
 								<h2 className="text-xl">Chapter access settings</h2>
 							</div>
 
-							<ChapterAccessForm
-								initialData={chapter}
-								courseId={params.courseId}
-								chapterId={params.chapterId}
-							/>
+							<ChapterAccessForm initialData={chapter} courseId={params.courseId} chapterId={params.chapterId} />
 						</div>
 					</div>
 
@@ -131,11 +107,7 @@ const ChapterPage = async ({
 							<h2 className="text-xl">Chapter video</h2>
 						</div>
 
-						<ChapterVideoForm
-							initialData={chapter}
-							chapterId={params.chapterId}
-							courseId={params.courseId}
-						/>
+						<ChapterVideoForm initialData={chapter} chapterId={params.chapterId} courseId={params.courseId} />
 					</div>
 				</div>
 			</div>
