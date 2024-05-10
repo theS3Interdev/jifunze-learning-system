@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "663bbad3925827c391e6571f"
+  },
+  "name": "Accounting & Finance",
+  "createdAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663bbad3925827c391e65721"
+  },
+  "name": "Productivity",
+  "createdAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663bbad3925827c391e6571e"
+  },
+  "name": "Business",
+  "createdAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663bbad3925827c391e65720"
+  },
+  "name": "Computer Science",
+  "createdAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663bbad3925827c391e65722"
+  },
+  "name": "Personal Development",
+  "createdAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663bbad3925827c391e65723"
+  },
+  "name": "Marketing",
+  "createdAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663bbad3925827c391e65724"
+  },
+  "name": "Teaching & Academics",
+  "createdAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-08T17:47:50.409Z"
+  }
+}]

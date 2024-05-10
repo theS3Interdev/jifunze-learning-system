@@ -1,0 +1,160 @@
+[{
+  "_id": {
+    "$oid": "663c4c043a23d9babbf67fed"
+  },
+  "createdAt": {
+    "$date": "2024-05-09T04:07:32.326Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T08:53:07.500Z"
+  },
+  "title": "Introduction to Software Testing",
+  "position": 1,
+  "isPublished": true,
+  "isFree": true,
+  "courseId": {
+    "$oid": "663b409a05d7ee17b3f1be97"
+  },
+  "description": "<p>This chapter covers the basics of software testing, including its importance, objectives, and the different roles and responsibilities of a tester. It provides an overview of the testing lifecycle and introduces key terminology.</p>",
+  "videoUrl": "https://utfs.io/f/8a3a77bf-8181-452d-986d-930b7abd42f2-pjrnne.mp4"
+},
+{
+  "_id": {
+    "$oid": "663c4c293a23d9babbf67fee"
+  },
+  "createdAt": {
+    "$date": "2024-05-09T04:08:09.258Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:24:24.483Z"
+  },
+  "title": "Types of Testing",
+  "position": 2,
+  "isPublished": true,
+  "isFree": false,
+  "courseId": {
+    "$oid": "663b409a05d7ee17b3f1be97"
+  },
+  "description": "<p>This chapter explores various testing types such as unit testing, integration testing, system testing, and acceptance testing. It discusses when and why each type is used and how they fit into the software development process.</p>",
+  "videoUrl": "https://utfs.io/f/be1df4a1-ea1d-4b85-8a18-d2a111603c4f-pjrnnf.mp4"
+},
+{
+  "_id": {
+    "$oid": "663c4c513a23d9babbf67fef"
+  },
+  "createdAt": {
+    "$date": "2024-05-09T04:08:49.941Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:27:04.535Z"
+  },
+  "title": "Writing Effective Test Cases",
+  "position": 3,
+  "isPublished": true,
+  "isFree": false,
+  "courseId": {
+    "$oid": "663b409a05d7ee17b3f1be97"
+  },
+  "description": "<p>Focuses on the techniques for designing test cases that effectively cover requirements, scenarios, and use cases. This chapter also discusses how to manage test cases and maintain traceability with requirements.</p>",
+  "videoUrl": "https://utfs.io/f/618b88bb-f26b-44af-a830-692357136156-pjrnng.mp4"
+},
+{
+  "_id": {
+    "$oid": "663c4c623a23d9babbf67ff0"
+  },
+  "createdAt": {
+    "$date": "2024-05-09T04:09:06.024Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:29:36.089Z"
+  },
+  "title": "The Basics of Test Automation",
+  "position": 3,
+  "isPublished": true,
+  "isFree": false,
+  "courseId": {
+    "$oid": "663b409a05d7ee17b3f1be97"
+  },
+  "description": "<p>Introduces the fundamentals of test automation, including when to automate, selection of tools, and setting up your first automated tests. It covers basic scripting and automation frameworks to help streamline testing processes.</p>",
+  "videoUrl": "https://utfs.io/f/054797b4-768e-4119-94ba-2285f1df74d7-pjrnnh.mp4"
+},
+{
+  "_id": {
+    "$oid": "663c97b023f9d37f7428d730"
+  },
+  "createdAt": {
+    "$date": "2024-05-09T09:30:24.689Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T15:33:19.976Z"
+  },
+  "title": "Testing Best Practices and Quality Assurances",
+  "position": 4,
+  "isPublished": true,
+  "isFree": false,
+  "courseId": {
+    "$oid": "663b409a05d7ee17b3f1be97"
+  },
+  "description": "<p>Discusses best practices in testing to ensure high-quality software delivery. It includes strategies for effective communication within teams, bug reporting, and regression testing phase.</p>",
+  "videoUrl": "https://utfs.io/f/d2c03097-5170-4981-8e84-7f59384791ca-pjrnni.mp4"
+},
+{
+  "_id": {
+    "$oid": "663de1830c3a06f1f46890b2"
+  },
+  "createdAt": {
+    "$date": "2024-05-10T08:57:39.995Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T09:03:33.745Z"
+  },
+  "title": "Introduction to Test Driven Development",
+  "position": 1,
+  "isPublished": true,
+  "isFree": true,
+  "courseId": {
+    "$oid": "663dc5610c3a06f1f46890af"
+  },
+  "description": "<p>&nbsp;Explore the core principles of Test Driven Development, its benefits, and the basic cycle of Red, Green, Refactor.</p>",
+  "videoUrl": "https://utfs.io/f/b40766fe-b582-457c-a5d5-e4943a65a401-pjrnnj.mp4"
+},
+{
+  "_id": {
+    "$oid": "663de1b00c3a06f1f46890b3"
+  },
+  "createdAt": {
+    "$date": "2024-05-10T08:58:24.111Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T09:06:34.745Z"
+  },
+  "title": "Writing Effective Tests",
+  "position": 2,
+  "isPublished": true,
+  "isFree": false,
+  "courseId": {
+    "$oid": "663dc5610c3a06f1f46890af"
+  },
+  "description": "<p>Learn how to write clear, concise, and effective unit tests that drive the development of robust software features.</p>",
+  "videoUrl": "https://utfs.io/f/8dffdcbf-72c1-41f7-a540-7d384fe0bbf0-pjrnnk.mp4"
+},
+{
+  "_id": {
+    "$oid": "663de1f70c3a06f1f46890b4"
+  },
+  "createdAt": {
+    "$date": "2024-05-10T08:59:35.244Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T09:08:58.426Z"
+  },
+  "title": "Advanced Test Driven Development Techniques",
+  "position": 3,
+  "isPublished": true,
+  "isFree": false,
+  "courseId": {
+    "$oid": "663dc5610c3a06f1f46890af"
+  },
+  "description": "<p>Delve into advanced TDD strategies including mocking, test isolation, and integrating TDD in complex systems.</p>",
+  "videoUrl": "https://utfs.io/f/02ad0555-3b22-4dbc-860d-11c5b5502485-pjrnnl.mp4"
+}]

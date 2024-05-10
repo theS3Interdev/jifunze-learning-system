@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "663b409a05d7ee17b3f1be97"
+  },
+  "createdAt": {
+    "$date": "2024-05-08T09:06:32.096Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T15:42:09.978Z"
+  },
+  "userId": "user_2g7g1dv4tXI4s8QhnTqtw2saGtA",
+  "title": "The Basics of Application Testing",
+  "isPublished": true,
+  "description": "Explore fundamental testing concepts in this course, covering test types, test case development, automation basics, and best practices to ensure software reliability.",
+  "imageUrl": "https://utfs.io/f/7ca36232-cd2d-46df-8edc-4c739b3d5d8f-bnhct3.jpg",
+  "categoryId": {
+    "$oid": "663bbad3925827c391e65720"
+  },
+  "price": 50
+},
+{
+  "_id": {
+    "$oid": "663dc5610c3a06f1f46890af"
+  },
+  "createdAt": {
+    "$date": "2024-05-10T06:57:34.923Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T09:09:11.880Z"
+  },
+  "userId": "user_2g7g1dv4tXI4s8QhnTqtw2saGtA",
+  "title": "Fundamentals of Test Driven Development",
+  "isPublished": true,
+  "description": "Master Test-Driven Development (TDD) with this course on writing tests before code, enhancing software design and ensuring robust, bug-free applications.",
+  "imageUrl": "https://utfs.io/f/9b7b3397-62df-4aaf-8b1a-e7cff79f86e5-p1cgnr.jpg",
+  "price": 50,
+  "categoryId": {
+    "$oid": "663bbad3925827c391e65720"
+  }
+}]
