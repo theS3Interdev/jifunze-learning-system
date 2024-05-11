@@ -7,7 +7,7 @@ const bannerVariants = cva("border text-center p-4 text-sm flex items-center w-f
 	variants: {
 		variant: {
 			warning: "bg-yellow-200/80 border-yellow-30 text-muted-foreground",
-			success: "bg-emerald-700 border-emerald-800 text-secondary",
+			success: "bg-sky-700 border-sky-800 text-secondary",
 		},
 	},
 	defaultVariants: {
