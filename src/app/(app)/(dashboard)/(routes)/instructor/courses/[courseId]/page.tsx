@@ -71,25 +71,17 @@ const CoursePage = async ({ params }: { params: { courseId: string } }) => {
 
 	return (
 		<>
-			{!course.isPublished && (
-				<Banner label="This course has not been published. It will not be available for enrollment." />
-			)}
+			{!course.isPublished && <Banner label="This course has not been published. It will not be available for enrollment." />}
 
 			<div className="p-6">
 				<div className="flex items-center justify-between">
 					<div className="flex flex-col gap-y-2">
 						<h1 className="text-2xl font-medium">Course setup</h1>
 
-						<span className="text-sm text-slate-700">
-							Complete all fields {completionText}
-						</span>
+						<span className="text-sm text-slate-700">Complete all fields {completionText}</span>
 					</div>
 
-					<CourseActions
-						disabled={!isComplete}
-						courseId={params.courseId}
-						isPublished={course.isPublished}
-					/>
+					<CourseActions disabled={!isComplete} courseId={params.courseId} isPublished={course.isPublished} />
 				</div>
 
 				<div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2">

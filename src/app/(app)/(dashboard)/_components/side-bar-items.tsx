@@ -16,10 +16,7 @@ export const SideBarItems = ({ icon: Icon, label, href }: SidebarItemProps) => {
 
 	const router = useRouter();
 
-	const isActive =
-		(pathname === "/" && href === "/") ||
-		pathname === href ||
-		pathname?.startsWith(`${href}/`);
+	const isActive = (pathname === "/" && href === "/") || pathname === href || pathname?.startsWith(`${href}/`);
 
 	const onClick = () => {
 		router.push(href);
@@ -30,7 +27,7 @@ export const SideBarItems = ({ icon: Icon, label, href }: SidebarItemProps) => {
 			onClick={onClick}
 			type="button"
 			className={cn(
-				"flex items-center gap-x-2 pl-6 text-sm font-[500] text-slate-500 transition-all hover:bg-slate-300/20 hover:text-slate-600",
+				"flex items-center gap-x-2 pl-6 text-sm font-[500] text-slate-500 transition-all hover:bg-sky-300/20 hover:text-sky-600",
 				isActive && "bg-sky-200/20 text-sky-700 hover:bg-sky-200/20 hover:text-sky-700",
 			)}
 		>
@@ -39,12 +36,7 @@ export const SideBarItems = ({ icon: Icon, label, href }: SidebarItemProps) => {
 				{label}
 			</div>
 
-			<div
-				className={cn(
-					"ml-auto h-full border-2 border-sky-700 opacity-0 transition-all",
-					isActive && "opacity-100",
-				)}
-			/>
+			<div className={cn("ml-auto h-full border-2 border-primary opacity-0 transition-all", isActive && "opacity-100")} />
 		</button>
 	);
 };

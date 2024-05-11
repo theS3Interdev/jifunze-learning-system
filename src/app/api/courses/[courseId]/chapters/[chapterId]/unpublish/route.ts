@@ -3,10 +3,7 @@ import { auth } from "@clerk/nextjs/server";
 
 import { db } from "@/lib/data/db";
 
-export async function PATCH(
-	req: Request,
-	{ params }: { params: { courseId: string; chapterId: string } },
-) {
+export async function PATCH(req: Request, { params }: { params: { courseId: string; chapterId: string } }) {
 	try {
 		const { userId } = auth();
 

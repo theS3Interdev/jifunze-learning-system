@@ -1,0 +1,128 @@
+[{
+  "_id": {
+    "$oid": "663c90e723f9d37f7428d72c"
+  },
+  "createdAt": {
+    "$date": "2024-05-09T09:01:27.621Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:01:27.621Z"
+  },
+  "assetId": "G02L01CZ9YFkQ00cYJQXGsPwnAdc81NcuizAOeM2joxpyk",
+  "playbackId": "yLdku4qIUrYQHMcMzj01EA4UMW5VpmceRx5900LgcvPb8",
+  "chapterId": {
+    "$oid": "663c4c043a23d9babbf67fed"
+  }
+},
+{
+  "_id": {
+    "$oid": "663c961423f9d37f7428d72d"
+  },
+  "createdAt": {
+    "$date": "2024-05-09T09:23:32.451Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:23:32.451Z"
+  },
+  "assetId": "QDGZHGHjP4vFWeOWOGg8zyBJ02f76lj8RHPUNv01002Idg",
+  "playbackId": "RA300RV01QPGm6dDDfTX2Za5Wqoxy4AIZ2Gd3oIhlescs",
+  "chapterId": {
+    "$oid": "663c4c293a23d9babbf67fee"
+  }
+},
+{
+  "_id": {
+    "$oid": "663c96a123f9d37f7428d72e"
+  },
+  "createdAt": {
+    "$date": "2024-05-09T09:25:53.761Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:25:53.761Z"
+  },
+  "assetId": "muEO3TCNyMjUzTmkNw9HpebWito2Uc541jzBj3pMHQ4",
+  "playbackId": "B02d6lGP3Q2I001r02RlMcZMcGubRTlee4a21sx66rw5MQ",
+  "chapterId": {
+    "$oid": "663c4c513a23d9babbf67fef"
+  }
+},
+{
+  "_id": {
+    "$oid": "663c975223f9d37f7428d72f"
+  },
+  "createdAt": {
+    "$date": "2024-05-09T09:28:50.154Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:28:50.154Z"
+  },
+  "assetId": "5BQKjKSx92OPVzwLLBf2xedTfkbQbUjYydCxwA1HN400",
+  "playbackId": "8vXtGAH2Qe8RALPIxDHbMSa00BE135GiHEgZrve2a402o",
+  "chapterId": {
+    "$oid": "663c4c623a23d9babbf67ff0"
+  }
+},
+{
+  "_id": {
+    "$oid": "663c990b23f9d37f7428d731"
+  },
+  "createdAt": {
+    "$date": "2024-05-09T09:36:11.315Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:36:11.315Z"
+  },
+  "assetId": "ptH1tmp4YAstzZ8xUNQKb71DsDLOz8JBG8CgBu00YStA",
+  "playbackId": "cXPo945Bu9Go4qz6V24cYkB3u4GaIo2LyRnOLqAvpD00",
+  "chapterId": {
+    "$oid": "663c97b023f9d37f7428d730"
+  }
+},
+{
+  "_id": {
+    "$oid": "663de27c0c3a06f1f46890b5"
+  },
+  "createdAt": {
+    "$date": "2024-05-10T09:01:48.597Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T09:01:48.597Z"
+  },
+  "assetId": "lsmAWBrtRgChIwbC02sQQmypDdM8j3dbh94gFpxud02Zo",
+  "playbackId": "wak82sYwEuVNbtz437EHfVUFMc02gTFQ2tqFUN9Y3IH8",
+  "chapterId": {
+    "$oid": "663de1830c3a06f1f46890b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "663de3610c3a06f1f46890b6"
+  },
+  "createdAt": {
+    "$date": "2024-05-10T09:05:37.544Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T09:05:37.544Z"
+  },
+  "assetId": "LlJLN44nxJBPOn1ltZafClA8GSLKTHUly4H5102qtNJ00",
+  "playbackId": "LRMd8UCPbjSsEX6AnDgAJ007aV1mkxtHAFLrt2GDSV00E",
+  "chapterId": {
+    "$oid": "663de1b00c3a06f1f46890b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "663de3f40c3a06f1f46890b7"
+  },
+  "createdAt": {
+    "$date": "2024-05-10T09:08:04.722Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T09:08:04.722Z"
+  },
+  "assetId": "nxmxnof4fC02oxj9c2kdoTyAAlBgqsgmA001CYf02QF4lo",
+  "playbackId": "wtILzVaG7oiIhMtc02d8wdBROg02eafUHQbYBl01hgRSH8",
+  "chapterId": {
+    "$oid": "663de1f70c3a06f1f46890b4"
+  }
+}]

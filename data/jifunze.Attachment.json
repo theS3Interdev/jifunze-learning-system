@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "663be280c8747df060b713b9"
+  },
+  "createdAt": {
+    "$date": "2024-05-08T20:37:18.675Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-08T20:37:18.675Z"
+  },
+  "name": "sample-txt-attachment-01.txt",
+  "url": "https://utfs.io/f/c979545e-8508-4b2b-a606-8827e45bca00-8rcy6t.txt",
+  "courseId": {
+    "$oid": "663b409a05d7ee17b3f1be97"
+  }
+},
+{
+  "_id": {
+    "$oid": "663bf096c8747df060b713bc"
+  },
+  "createdAt": {
+    "$date": "2024-05-08T21:37:26.177Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-08T21:37:26.177Z"
+  },
+  "name": "sample-txt-attachment-02.txt",
+  "url": "https://utfs.io/f/4e7a68c5-fe77-4ed1-8122-ae2ec05e61c0-8rcy6s.txt",
+  "courseId": {
+    "$oid": "663b409a05d7ee17b3f1be97"
+  }
+},
+{
+  "_id": {
+    "$oid": "663dd82a0c3a06f1f46890b0"
+  },
+  "createdAt": {
+    "$date": "2024-05-10T08:17:46.770Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T08:17:46.770Z"
+  },
+  "name": "sample-pdf-attachment-01.pdf",
+  "url": "https://utfs.io/f/6faa8639-7fa6-472f-b486-ec4fe4d1ed61-5nk7vx.pdf",
+  "courseId": {
+    "$oid": "663dc5610c3a06f1f46890af"
+  }
+},
+{
+  "_id": {
+    "$oid": "663ddb0c0c3a06f1f46890b1"
+  },
+  "createdAt": {
+    "$date": "2024-05-10T08:30:04.322Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T08:30:04.322Z"
+  },
+  "name": "sample-pdf-attachment-02.pdf",
+  "url": "https://utfs.io/f/8aa03f67-52bf-4739-b4ac-c4b2b29444a3-5nk7vy.pdf",
+  "courseId": {
+    "$oid": "663dc5610c3a06f1f46890af"
+  }
+}]
