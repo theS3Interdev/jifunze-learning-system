@@ -15,7 +15,7 @@ const ChapterPage = async ({ params }: { params: { courseId: string; chapterId: 
 	const { userId } = auth();
 
 	if (!userId) {
-		return redirect("/");
+		return redirect("/search");
 	}
 
 	const { chapter, course, muxData, attachments, nextChapter, userProgress, purchase } = await getChapter({
@@ -25,7 +25,7 @@ const ChapterPage = async ({ params }: { params: { courseId: string; chapterId: 
 	});
 
 	if (!chapter || !course) {
-		return redirect("/");
+		return redirect("/search");
 	}
 
 	const isLocked = !chapter.isFree && !purchase;
