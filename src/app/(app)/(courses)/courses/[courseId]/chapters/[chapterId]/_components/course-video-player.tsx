@@ -85,8 +85,9 @@ export const CourseVideoPlayer = ({ playbackId, courseId, chapterId, nextChapter
 					className={cn(!isReady && "hidden")}
 					onCanPlay={() => setIsReady(true)}
 					onEnded={onEnd}
-					autoPlay
+					autoPlay={false}
 					playbackId={playbackId}
+					accentColor="#3576DF"
 				/>
 			)}
 		</div>
