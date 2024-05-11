@@ -3,10 +3,7 @@ import { auth } from "@clerk/nextjs/server";
 
 import { db } from "@/lib/data/db";
 
-export async function DELETE(
-	req: Request,
-	{ params }: { params: { courseId: string; attachmentId: string } },
-) {
+export async function DELETE(req: Request, { params }: { params: { courseId: string; attachmentId: string } }) {
 	try {
 		const { userId } = auth();
 

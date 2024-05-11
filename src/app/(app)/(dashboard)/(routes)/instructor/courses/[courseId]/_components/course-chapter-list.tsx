@@ -16,11 +16,7 @@ type CourseChaptersListProps = {
 	onEdit: (id: string) => void;
 };
 
-export const CourseChapterList = ({
-	items,
-	onReorder,
-	onEdit,
-}: CourseChaptersListProps) => {
+export const CourseChapterList = ({ items, onReorder, onEdit }: CourseChaptersListProps) => {
 	const [isMounted, setIsMounted] = useState(false);
 
 	const [chapters, setChapters] = useState(items);
@@ -92,18 +88,10 @@ export const CourseChapterList = ({
 
 										<div className="ml-auto flex items-center gap-x-2 pr-2">
 											{chapter.isFree && <Badge>Free</Badge>}
-											<Badge
-												className={cn(
-													"bg-slate-500",
-													chapter.isPublished && "bg-sky-700",
-												)}
-											>
+											<Badge className={cn("bg-muted-foreground", chapter.isPublished && "bg-primary")}>
 												{chapter.isPublished ? "Published" : "Draft"}
 											</Badge>
-											<Pencil
-												onClick={() => onEdit(chapter.id)}
-												className="h-4 w-4 cursor-pointer transition hover:opacity-75"
-											/>
+											<Pencil onClick={() => onEdit(chapter.id)} className="h-4 w-4 cursor-pointer transition hover:opacity-75" />
 										</div>
 									</div>
 								)}

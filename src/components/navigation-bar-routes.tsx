@@ -34,7 +34,7 @@ export const NavigationBarRoutes = () => {
 					<Link href="/search">
 						<Button size="sm" variant="ghost">
 							<LogOut className="mr-2 h-4 w-4" />
-							Exit Instructor Mode
+							Exit
 						</Button>
 					</Link>
 				) : isInstructor(userId) ? (
