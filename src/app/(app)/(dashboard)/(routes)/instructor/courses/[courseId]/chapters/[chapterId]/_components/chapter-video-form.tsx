@@ -23,11 +23,7 @@ const formSchema = z.object({
 	videoUrl: z.string().min(1),
 });
 
-export const ChapterVideoForm = ({
-	initialData,
-	courseId,
-	chapterId,
-}: ChapterVideoFormProps) => {
+export const ChapterVideoForm = ({ initialData, courseId, chapterId }: ChapterVideoFormProps) => {
 	const [isEditing, setIsEditing] = useState(false);
 
 	const router = useRouter();
@@ -90,7 +86,7 @@ export const ChapterVideoForm = ({
 					</div>
 				) : (
 					<div className="relative mt-2 aspect-video">
-						<MuxPlayer playbackId={initialData?.muxData?.playbackId || ""} />
+						<MuxPlayer playbackId={initialData?.muxData?.playbackId || ""} accentColor="#3576DF" autoPlay={false} />
 					</div>
 				))}
 
@@ -105,16 +101,13 @@ export const ChapterVideoForm = ({
 						}}
 					/>
 
-					<div className="mt-4 text-xs text-muted-foreground">
-						Upload this chapter&apos;s video
-					</div>
+					<div className="mt-4 text-xs text-muted-foreground">Upload this chapter&apos;s video</div>
 				</div>
 			)}
 
 			{initialData.videoUrl && !isEditing && (
 				<div className="mt-2 text-xs text-muted-foreground">
-					Videos may take a few minutes to process. Refresh the page if video doesn&apos;t
-					load.
+					Videos may take a few minutes to process. Refresh the page if video doesn&apos;t load.
 				</div>
 			)}
 		</div>
